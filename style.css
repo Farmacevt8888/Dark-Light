@@ -1,0 +1,109 @@
+*{padding: 0;margin: 0;border: 0;}
+*,*:before,*:after{-moz-box-sizing: border-box;-webkit-box-sizing: border-box;box-sizing: border-box;}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+nav,footer,header,aside{display: block;}
+html,body{height:100%;width:100%;font-size:100%;line-height:1;font-size:14px;-ms-text-size-adjust:100%;-moz-text-size-adjust:100%;-webkit-text-size-adjust:100%;}
+input,button,textarea{font-family:inherit;}
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner{padding:0;border:0;}
+a,a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
+/*--------------------*/
+
+
+/* 
+.wrapper {
+   
+} */
+.page {
+   padding: 0px 20px;
+}
+.page__container {
+   max-width: 900px;
+   margin: 30px auto;
+}
+.page__header {
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 25px ;
+}
+.page__title {
+   font-size: 24px;
+   font-weight: 700;
+}
+.page__action {
+   width: 50px;
+   height: 50px;
+}
+.page__theme {
+   position: relative;
+   top: 0;
+   right: 0;
+   width: 50px;
+   height: 50px;
+}
+.page__reset {
+   opacity: 0;
+   visibility: hidden;
+   position: absolute;
+}
+.page__reset.active {
+   opacity: 1;
+   visibility: visible;
+}
+.page__reset::before{
+   content: "x";
+   position: absolute;
+   top: 5px;
+   right: 5px;
+   cursor: pointer;
+   width: 10px;
+   height: 10px;
+   font-size: 8px;
+   border-radius: 50%;
+   line-height: 10px;
+   color: #e29228;
+   background-color: #666;
+}
+.page__text {
+   line-height: 150%;
+   margin-bottom: 20px;
+}
+.page__text p:not(:last-child) {
+   margin-bottom: 20px;
+}
+
+body {
+   transition: all 0.3s ease 0s;
+   background-color: #fff;
+   color: #333;
+}
+
+
+/* @media (prefers-color-scheme: dark) {
+   body {
+      color: #fff;
+      background: #333;
+   }
+} */
+
+html.dark body {
+   color: #fff;
+   background: #333;
+}
+html.light body {
+   background-color: #fff;
+   color: #333;
+}
+
+html.dark .page__theme {
+   background: url('../icons/moon.svg') 0 0 / 100% no-repeat;
+}
+html.light .page__theme {
+   background: url('../icons/sun.svg') 0 0 / 100% no-repeat;
+}
