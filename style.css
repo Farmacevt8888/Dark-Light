@@ -102,8 +102,8 @@ html.light body {
 }
 
 html.dark .page__theme {
-   background: url('../icons/moon.svg') 0 0 / 100% no-repeat;
+   background: url('/icons/moon.svg') 0 0 / 100% no-repeat;
 }
 html.light .page__theme {
-   background: url('../icons/sun.svg') 0 0 / 100% no-repeat;
+   background: url('/icons/sun.svg') 0 0 / 100% no-repeat;
 }
